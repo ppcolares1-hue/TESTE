@@ -1,0 +1,100 @@
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html lang=&quot;pt-br&quot;&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&nbsp; &nbsp; &lt;meta charset=&quot;UTF-8&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;title&gt;*** Dashboard de Estudos - TJCE&lt;/title&gt;</p>
+<p>&nbsp; &nbsp; &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;script src=&quot;https://cdn.jsdelivr.net/npm/chart.js&quot;&gt;&lt;/script&gt;</p>
+<p>&nbsp; &nbsp; &lt;style&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; body { font-family: &apos;Inter&apos;, sans-serif; background-color: #f4f7f6; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .card { border: none; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .stat-card { text-align: center; padding: 20px; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .stat-value { font-size: 2rem; font-weight: bold; color: #2c3e50; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; .header-bg { background: linear-gradient(135deg, #2c3e50, #4ca1af); color: white; padding: 40px 0; border-radius: 0 0 30px 30px; }</p>
+<p>&nbsp; &nbsp; &lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p><br></p>
+<p>&lt;div class=&quot;header-bg text-****** mb-5&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;h1&gt;📊 ************** ** Quest&otilde;es&lt;/h1&gt;</p>
+<p>&nbsp; &nbsp; &lt;p&gt;Rumo &agrave; aprova&ccedil;&atilde;o ** TJCE&lt;/p&gt;</p>
+<p>&lt;/div&gt;</p>
+<p><br></p>
+<p>&lt;div class=&quot;container&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;div class=&quot;*** mb-4&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;col-md-4&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;**** stat-card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;text-muted&quot;&gt;Total ** Quest&otilde;es&lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;stat-value&quot; id=&quot;totalQuest&quot;&gt;1.250&lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;col-md-4&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card stat-card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;text-muted&quot;&gt;M&eacute;*** de Acertos&lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;stat-***** text-success&quot; id=&quot;avgAcertos&quot;&gt;82%&lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;col-md-4&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;**** stat-card&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;text-muted&quot;&gt;Dias de Estudo&lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;stat-value text-primary&quot;&gt;45&lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &lt;/div&gt;</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &lt;div class=&quot;row&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;col-md-6 mb-4&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;card p-4&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h5 class=&quot;mb-3&quot;&gt;Desempenho Geral&lt;/h5&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;canvas id=&quot;chartGeral&quot;&gt;&lt;/canvas&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;*** class=&quot;col-md-6 mb-4&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;**** p-4&quot;&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h5 class=&quot;mb-3&quot;&gt;Acertos por Mat&eacute;ria (%)&lt;/h5&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;canvas id=&quot;chartMaterias&quot;&gt;&lt;/canvas&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &lt;/div&gt;</p>
+<p>&lt;/div&gt;</p>
+<p><br></p>
+<p>&lt;script&gt;</p>
+<p>&nbsp; &nbsp; // Configura&ccedil;&atilde;o ** Gr&aacute;**** ** Pizza</p>
+<p>&nbsp; &nbsp; const ctxGeral = document.getElementById(&apos;chartGeral&apos;).getContext(&apos;2d&apos;);</p>
+<p>&nbsp; &nbsp; new Chart(ctxGeral, {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; type: &apos;doughnut&apos;,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; data: {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; labels: [&apos;Acertos&apos;, &apos;Erros&apos;],</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; datasets: [{</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; data: [1025, 225],</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; backgroundColor: [&apos;#27ae60&apos;, &apos;#e74c3c&apos;],</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; borderWidth: 0</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }]</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; });</p>
+<p><br></p>
+<p>&nbsp; &nbsp; // Configura&ccedil;&atilde;o do Gr&aacute;fico de ****** (Suas mat&eacute;rias do TJCE)</p>
+<p>&nbsp; &nbsp; const ctxMaterias = document.getElementById(&apos;chartMaterias&apos;).getContext(&apos;2d&apos;);</p>
+<p>&nbsp; &nbsp; new Chart(ctxMaterias, {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; type: &apos;bar&apos;,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; data: {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; labels: [&apos;Constitucional&apos;, &apos;Administrativo&apos;, &apos;Civil&apos;, &apos;Processo Civil&apos;, &apos;Portugu&ecirc;s&apos;],</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; datasets: [{</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; label: &apos;% de Acerto&apos;,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; data: [85, 78, 92, 70, 88],</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; backgroundColor: &apos;#3498db&apos;,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; borderRadius: 8</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }]</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; },</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; options: {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; scales: { y: { beginAtZero: true, max: 100 } }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; });</p>
+<p>&lt;/script&gt;</p>
+<p><br></p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<p><br></p>
+<div style="color: red">Word to HTML trial - please <a href="https://wordtohtml.net/site/payment">Go PRO</a> to get whole HTML.</div>
